@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF2A36F71BA46BE900EC2455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A36F61BA46BE900EC2455 /* AppDelegate.swift */; };
+		CF2A36F91BA46BE900EC2455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A36F81BA46BE900EC2455 /* ViewController.swift */; };
+		CF2A36FC1BA46BE900EC2455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2A36FA1BA46BE900EC2455 /* Main.storyboard */; };
+		CF2A36FE1BA46BE900EC2455 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF2A36FD1BA46BE900EC2455 /* Images.xcassets */; };
+		CF2A37011BA46BE900EC2455 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF2A36FF1BA46BE900EC2455 /* LaunchScreen.xib */; };
+		CF2A370D1BA46BE900EC2455 /* atx_foodFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A370C1BA46BE900EC2455 /* atx_foodFinderTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF2A37071BA46BE900EC2455 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF2A36E91BA46BE900EC2455 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF2A36F01BA46BE900EC2455;
+			remoteInfo = "atx-foodFinder";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF2A36F11BA46BE900EC2455 /* atx-foodFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "atx-foodFinder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2A36F51BA46BE900EC2455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2A36F61BA46BE900EC2455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF2A36F81BA46BE900EC2455 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF2A36FB1BA46BE900EC2455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF2A36FD1BA46BE900EC2455 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CF2A37001BA46BE900EC2455 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CF2A37061BA46BE900EC2455 /* atx-foodFinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "atx-foodFinderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF2A370B1BA46BE900EC2455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF2A370C1BA46BE900EC2455 /* atx_foodFinderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = atx_foodFinderTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF2A36EE1BA46BE900EC2455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2A37031BA46BE900EC2455 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF2A36E81BA46BE900EC2455 = {
+			isa = PBXGroup;
+			children = (
+				CF2A36F31BA46BE900EC2455 /* atx-foodFinder */,
+				CF2A37091BA46BE900EC2455 /* atx-foodFinderTests */,
+				CF2A36F21BA46BE900EC2455 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF2A36F21BA46BE900EC2455 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF2A36F11BA46BE900EC2455 /* atx-foodFinder.app */,
+				CF2A37061BA46BE900EC2455 /* atx-foodFinderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF2A36F31BA46BE900EC2455 /* atx-foodFinder */ = {
+			isa = PBXGroup;
+			children = (
+				CF2A36F61BA46BE900EC2455 /* AppDelegate.swift */,
+				CF2A36F81BA46BE900EC2455 /* ViewController.swift */,
+				CF2A36FA1BA46BE900EC2455 /* Main.storyboard */,
+				CF2A36FD1BA46BE900EC2455 /* Images.xcassets */,
+				CF2A36FF1BA46BE900EC2455 /* LaunchScreen.xib */,
+				CF2A36F41BA46BE900EC2455 /* Supporting Files */,
+			);
+			path = "atx-foodFinder";
+			sourceTree = "<group>";
+		};
+		CF2A36F41BA46BE900EC2455 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF2A36F51BA46BE900EC2455 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF2A37091BA46BE900EC2455 /* atx-foodFinderTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF2A370C1BA46BE900EC2455 /* atx_foodFinderTests.swift */,
+				CF2A370A1BA46BE900EC2455 /* Supporting Files */,
+			);
+			path = "atx-foodFinderTests";
+			sourceTree = "<group>";
+		};
+		CF2A370A1BA46BE900EC2455 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF2A370B1BA46BE900EC2455 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF2A36F01BA46BE900EC2455 /* atx-foodFinder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2A37101BA46BE900EC2455 /* Build configuration list for PBXNativeTarget "atx-foodFinder" */;
+			buildPhases = (
+				CF2A36ED1BA46BE900EC2455 /* Sources */,
+				CF2A36EE1BA46BE900EC2455 /* Frameworks */,
+				CF2A36EF1BA46BE900EC2455 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "atx-foodFinder";
+			productName = "atx-foodFinder";
+			productReference = CF2A36F11BA46BE900EC2455 /* atx-foodFinder.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF2A37051BA46BE900EC2455 /* atx-foodFinderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF2A37131BA46BE900EC2455 /* Build configuration list for PBXNativeTarget "atx-foodFinderTests" */;
+			buildPhases = (
+				CF2A37021BA46BE900EC2455 /* Sources */,
+				CF2A37031BA46BE900EC2455 /* Frameworks */,
+				CF2A37041BA46BE900EC2455 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF2A37081BA46BE900EC2455 /* PBXTargetDependency */,
+			);
+			name = "atx-foodFinderTests";
+			productName = "atx-foodFinderTests";
+			productReference = CF2A37061BA46BE900EC2455 /* atx-foodFinderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF2A36E91BA46BE900EC2455 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "div-hack";
+				TargetAttributes = {
+					CF2A36F01BA46BE900EC2455 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					CF2A37051BA46BE900EC2455 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = CF2A36F01BA46BE900EC2455;
+					};
+				};
+			};
+			buildConfigurationList = CF2A36EC1BA46BE900EC2455 /* Build configuration list for PBXProject "atx-foodFinder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF2A36E81BA46BE900EC2455;
+			productRefGroup = CF2A36F21BA46BE900EC2455 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF2A36F01BA46BE900EC2455 /* atx-foodFinder */,
+				CF2A37051BA46BE900EC2455 /* atx-foodFinderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF2A36EF1BA46BE900EC2455 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2A36FC1BA46BE900EC2455 /* Main.storyboard in Resources */,
+				CF2A37011BA46BE900EC2455 /* LaunchScreen.xib in Resources */,
+				CF2A36FE1BA46BE900EC2455 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2A37041BA46BE900EC2455 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF2A36ED1BA46BE900EC2455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2A36F91BA46BE900EC2455 /* ViewController.swift in Sources */,
+				CF2A36F71BA46BE900EC2455 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF2A37021BA46BE900EC2455 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF2A370D1BA46BE900EC2455 /* atx_foodFinderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF2A37081BA46BE900EC2455 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF2A36F01BA46BE900EC2455 /* atx-foodFinder */;
+			targetProxy = CF2A37071BA46BE900EC2455 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF2A36FA1BA46BE900EC2455 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF2A36FB1BA46BE900EC2455 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF2A36FF1BA46BE900EC2455 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF2A37001BA46BE900EC2455 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF2A370E1BA46BE900EC2455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF2A370F1BA46BE900EC2455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF2A37111BA46BE900EC2455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "atx-foodFinder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF2A37121BA46BE900EC2455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "atx-foodFinder/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CF2A37141BA46BE900EC2455 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "atx-foodFinderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/atx-foodFinder.app/atx-foodFinder";
+			};
+			name = Debug;
+		};
+		CF2A37151BA46BE900EC2455 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "atx-foodFinderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/atx-foodFinder.app/atx-foodFinder";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF2A36EC1BA46BE900EC2455 /* Build configuration list for PBXProject "atx-foodFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2A370E1BA46BE900EC2455 /* Debug */,
+				CF2A370F1BA46BE900EC2455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF2A37101BA46BE900EC2455 /* Build configuration list for PBXNativeTarget "atx-foodFinder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2A37111BA46BE900EC2455 /* Debug */,
+				CF2A37121BA46BE900EC2455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF2A37131BA46BE900EC2455 /* Build configuration list for PBXNativeTarget "atx-foodFinderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF2A37141BA46BE900EC2455 /* Debug */,
+				CF2A37151BA46BE900EC2455 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF2A36E91BA46BE900EC2455 /* Project object */;
+}
