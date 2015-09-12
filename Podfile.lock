@@ -1,4 +1,25 @@
 PODS:
+  - AFNetworking (2.6.0):
+    - AFNetworking/NSURLConnection (= 2.6.0)
+    - AFNetworking/NSURLSession (= 2.6.0)
+    - AFNetworking/Reachability (= 2.6.0)
+    - AFNetworking/Security (= 2.6.0)
+    - AFNetworking/Serialization (= 2.6.0)
+    - AFNetworking/UIKit (= 2.6.0)
+  - AFNetworking/NSURLConnection (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.0)
+  - AFNetworking/Security (2.6.0)
+  - AFNetworking/Serialization (2.6.0)
+  - AFNetworking/UIKit (2.6.0):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
   - Bolts (1.2.2):
     - Bolts/AppLinks (= 1.2.2)
     - Bolts/Tasks (= 1.2.2)
@@ -24,6 +45,7 @@ PODS:
     - SQLite.swift/Core
 
 DEPENDENCIES:
+  - AFNetworking (~> 2.0)
   - FBSDKCoreKit (= 4.5.1)
   - FBSDKLoginKit (= 4.5.1)
   - Firebase (>= 2.3.3)
@@ -39,6 +61,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/stephencelis/SQLite.swift.git
 
 SPEC CHECKSUMS:
+  AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
   Bolts: 20a2bd788273360cb1e31530dc19b8544eef2544
   FBSDKCoreKit: f335eaf6865e1e1597dee1debfb533045500da47
   FBSDKLoginKit: 225cc9a388a92916ee3f3bb14422017b6e44b65b

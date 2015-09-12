@@ -4,70 +4,65 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Bolts.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>FBSDKCoreKit.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>FBSDKLoginKit.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>Pods-wishNgive.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SQLite.swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0398351C3B612C9C098FB449AD9C41A7</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>2662BCE29D6B4F44063183505224E41A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>3159EAD4A7A069DE965FEC5AF280E459</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3890E12E361CF5BA51CB53F0EE24EE90</key>
+		<key>31DD69925470D2EF1FA8753CA67F7876</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>394DC5CFA6868481834C6FE07641C28A</key>
+		<key>4CD03C43C91DEFFB64D37585F33EFD16</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>48314D0FE1B4422FAAE1CA58E78983B5</key>
+		<key>4D233CD70EE510396285E228984E668D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>51F24078AD7C0B2AA05193A225CEA28C</key>
+		<key>8DDBCAA5D1060E808DE164175E3F5699</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CFD2C89209876C03FC09F73BED5AF48B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>EA2A39529B9BA892642686AC0C823E75</key>
+		<key>EAC3FC80319535575E03C466F872DFBB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

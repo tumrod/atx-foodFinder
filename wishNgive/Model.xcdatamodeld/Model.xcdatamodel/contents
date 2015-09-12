@@ -1,4 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14F27" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+    <entity name="Item" syncable="YES">
+        <attribute name="itemId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="itemName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="List" syncable="YES">
+        <attribute name="listId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="itemList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Item" syncable="YES"/>
+    </entity>
+    <entity name="User" syncable="YES">
+        <attribute name="userId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="Item" positionX="-54" positionY="9" width="128" height="75"/>
+        <element name="List" positionX="-36" positionY="27" width="128" height="75"/>
+    </elements>
 </model>
