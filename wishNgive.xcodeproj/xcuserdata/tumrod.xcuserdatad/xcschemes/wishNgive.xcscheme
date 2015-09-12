@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CF2A371E1BA4819300EC2455"
-               BuildableName = "wish&amp;get.app"
-               BlueprintName = "wish&amp;get"
-               ReferencedContainer = "container:wish&amp;get.xcodeproj">
+               BlueprintIdentifier = "CF2A374C1BA4836A00EC2455"
+               BuildableName = "wishNgive.app"
+               BlueprintName = "wishNgive"
+               ReferencedContainer = "container:wishNgive.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CF2A37331BA4819300EC2455"
-               BuildableName = "wish&amp;getTests.xctest"
-               BlueprintName = "wish&amp;getTests"
-               ReferencedContainer = "container:wish&amp;get.xcodeproj">
+               BlueprintIdentifier = "CF2A37611BA4836A00EC2455"
+               BuildableName = "wishNgiveTests.xctest"
+               BlueprintName = "wishNgiveTests"
+               ReferencedContainer = "container:wishNgive.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CF2A37331BA4819300EC2455"
-               BuildableName = "wish&amp;getTests.xctest"
-               BlueprintName = "wish&amp;getTests"
-               ReferencedContainer = "container:wish&amp;get.xcodeproj">
+               BlueprintIdentifier = "CF2A37611BA4836A00EC2455"
+               BuildableName = "wishNgiveTests.xctest"
+               BlueprintName = "wishNgiveTests"
+               ReferencedContainer = "container:wishNgive.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CF2A371E1BA4819300EC2455"
-            BuildableName = "wish&amp;get.app"
-            BlueprintName = "wish&amp;get"
-            ReferencedContainer = "container:wish&amp;get.xcodeproj">
+            BlueprintIdentifier = "CF2A374C1BA4836A00EC2455"
+            BuildableName = "wishNgive.app"
+            BlueprintName = "wishNgive"
+            ReferencedContainer = "container:wishNgive.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -76,10 +76,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CF2A371E1BA4819300EC2455"
-            BuildableName = "wish&amp;get.app"
-            BlueprintName = "wish&amp;get"
-            ReferencedContainer = "container:wish&amp;get.xcodeproj">
+            BlueprintIdentifier = "CF2A374C1BA4836A00EC2455"
+            BuildableName = "wishNgive.app"
+            BlueprintName = "wishNgive"
+            ReferencedContainer = "container:wishNgive.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,10 +95,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CF2A371E1BA4819300EC2455"
-            BuildableName = "wish&amp;get.app"
-            BlueprintName = "wish&amp;get"
-            ReferencedContainer = "container:wish&amp;get.xcodeproj">
+            BlueprintIdentifier = "CF2A374C1BA4836A00EC2455"
+            BuildableName = "wishNgive.app"
+            BlueprintName = "wishNgive"
+            ReferencedContainer = "container:wishNgive.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

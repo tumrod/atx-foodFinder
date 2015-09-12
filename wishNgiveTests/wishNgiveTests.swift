@@ -1,6 +1,6 @@
 //
-//  wish_getTests.swift
-//  wish&getTests
+//  wishNgiveTests.swift
+//  wishNgiveTests
 //
 //  Created by Tipparat Umrod on 9/12/15.
 //  Copyright (c) 2015 div-hack. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class wish_getTests: XCTestCase {
+class wishNgiveTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
