@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Bolts.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>FBSDKCoreKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>FBSDKLoginKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Pods-wishNgive.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0398351C3B612C9C098FB449AD9C41A7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>2662BCE29D6B4F44063183505224E41A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>3890E12E361CF5BA51CB53F0EE24EE90</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CFD2C89209876C03FC09F73BED5AF48B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

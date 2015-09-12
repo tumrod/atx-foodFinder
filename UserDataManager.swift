@@ -15,7 +15,7 @@ class UserDataManager {
     func writeData() {
         
         // Write data to Firebase
-        myRootRef.setValue("testing")
+        myRootRef.setValue("hello")
         
     }
     

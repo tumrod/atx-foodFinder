@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		98F83557F5DCBEB5756D14D4 /* Pods_wishNgive.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE2DFB44A179DFD5D8BCB1D /* Pods_wishNgive.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B84BDB4A1BA4C33C00A0BCB0 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84BDB491BA4C33C00A0BCB0 /* Users.swift */; };
 		B8EE66721BA49D6C00AB4760 /* Pages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8EE66711BA49D6C00AB4760 /* Pages.storyboard */; };
 		CF2A37531BA4836A00EC2455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A37521BA4836A00EC2455 /* AppDelegate.swift */; };
 		CF2A37551BA4836A00EC2455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A37541BA4836A00EC2455 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 		45518362E9747F037A95C4EA /* Pods-wishNgive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wishNgive.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wishNgive/Pods-wishNgive.debug.xcconfig"; sourceTree = "<group>"; };
 		5AE2DFB44A179DFD5D8BCB1D /* Pods_wishNgive.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_wishNgive.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		706DE9A88A13F46A548AFB8E /* Pods-wishNgive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wishNgive.release.xcconfig"; path = "Pods/Target Support Files/Pods-wishNgive/Pods-wishNgive.release.xcconfig"; sourceTree = "<group>"; };
+		B84BDB491BA4C33C00A0BCB0 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		B8EE66711BA49D6C00AB4760 /* Pages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pages.storyboard; sourceTree = "<group>"; };
 		CF2A374D1BA4836A00EC2455 /* wishNgive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wishNgive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2A37511BA4836A00EC2455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				CF2A37811BA4BA8D00EC2455 /* UserDataManager.swift */,
+				B84BDB491BA4C33C00A0BCB0 /* Users.swift */,
 				D32734081BA4ADFB00799D57 /* PagesViewController */,
 				CF2A37521BA4836A00EC2455 /* AppDelegate.swift */,
 				CF2A37541BA4836A00EC2455 /* ViewController.swift */,
@@ -328,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B84BDB4A1BA4C33C00A0BCB0 /* Users.swift in Sources */,
 				CF2A37821BA4BA8D00EC2455 /* UserDataManager.swift in Sources */,
 				CF2A37551BA4836A00EC2455 /* ViewController.swift in Sources */,
 				D327340A1BA4AE1800799D57 /* WishViewController.swift in Sources */,
