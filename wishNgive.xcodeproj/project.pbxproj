@@ -27,6 +27,7 @@
 		D327340A1BA4AE1800799D57 /* WishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32734091BA4AE1800799D57 /* WishViewController.swift */; };
 		D327340C1BA4AE2800799D57 /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327340B1BA4AE2800799D57 /* GiftViewController.swift */; };
 		D327340E1BA4AE3700799D57 /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327340D1BA4AE3700799D57 /* FindFriendsViewController.swift */; };
+		D32734121BA4DAD300799D57 /* NewItemWishListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32734111BA4DAD300799D57 /* NewItemWishListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		D32734091BA4AE1800799D57 /* WishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishViewController.swift; sourceTree = "<group>"; };
 		D327340B1BA4AE2800799D57 /* GiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
 		D327340D1BA4AE3700799D57 /* FindFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
+		D32734111BA4DAD300799D57 /* NewItemWishListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemWishListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,8 +187,17 @@
 				D32734091BA4AE1800799D57 /* WishViewController.swift */,
 				D327340B1BA4AE2800799D57 /* GiftViewController.swift */,
 				D327340D1BA4AE3700799D57 /* FindFriendsViewController.swift */,
+				D32734131BA4DADE00799D57 /* PagesViewControllerCells */,
 			);
 			name = PagesViewController;
+			sourceTree = "<group>";
+		};
+		D32734131BA4DADE00799D57 /* PagesViewControllerCells */ = {
+			isa = PBXGroup;
+			children = (
+				D32734111BA4DAD300799D57 /* NewItemWishListCell.swift */,
+			);
+			name = PagesViewControllerCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +356,7 @@
 				B8C4315A1BA4CD33001F079C /* Item.swift in Sources */,
 				CF2A37821BA4BA8D00EC2455 /* UserDataManager.swift in Sources */,
 				B8C4315C1BA4CD84001F079C /* List.swift in Sources */,
+				D32734121BA4DAD300799D57 /* NewItemWishListCell.swift in Sources */,
 				CF2A37551BA4836A00EC2455 /* ViewController.swift in Sources */,
 				D327340A1BA4AE1800799D57 /* WishViewController.swift in Sources */,
 				CF2A37531BA4836A00EC2455 /* AppDelegate.swift in Sources */,

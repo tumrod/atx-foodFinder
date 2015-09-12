@@ -14,8 +14,8 @@ class Item {
     var itemName: String
     
     init?(itemId: Int, itemName: String) {
-        self.userId = itemId
-        self.userName = itemName
+        self.itemId = itemId
+        self.itemName = itemName
         
         if itemName.isEmpty {
             return nil
