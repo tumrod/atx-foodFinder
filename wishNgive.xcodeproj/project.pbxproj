@@ -17,6 +17,10 @@
 		CF2A37781BA48D1800EC2455 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A37741BA48D1800EC2455 /* FBSDKCoreKit.framework */; };
 		CF2A37791BA48D1800EC2455 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A37751BA48D1800EC2455 /* FBSDKLoginKit.framework */; };
 		CF2A377A1BA48D1800EC2455 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF2A37761BA48D1800EC2455 /* FBSDKShareKit.framework */; };
+		D32734071BA4ADEE00799D57 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32734061BA4ADEE00799D57 /* HomeViewController.swift */; };
+		D327340A1BA4AE1800799D57 /* WishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32734091BA4AE1800799D57 /* WishViewController.swift */; };
+		D327340C1BA4AE2800799D57 /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327340B1BA4AE2800799D57 /* GiftViewController.swift */; };
+		D327340E1BA4AE3700799D57 /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327340D1BA4AE3700799D57 /* FindFriendsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		CF2A37741BA48D1800EC2455 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = wishNgive/FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		CF2A37751BA48D1800EC2455 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = wishNgive/FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		CF2A37761BA48D1800EC2455 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = wishNgive/FBSDKShareKit.framework; sourceTree = "<group>"; };
+		D32734061BA4ADEE00799D57 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D32734091BA4AE1800799D57 /* WishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WishViewController.swift; sourceTree = "<group>"; };
+		D327340B1BA4AE2800799D57 /* GiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
+		D327340D1BA4AE3700799D57 /* FindFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +108,7 @@
 		CF2A374F1BA4836A00EC2455 /* wishNgive */ = {
 			isa = PBXGroup;
 			children = (
+				D32734081BA4ADFB00799D57 /* PagesViewController */,
 				CF2A37521BA4836A00EC2455 /* AppDelegate.swift */,
 				CF2A37541BA4836A00EC2455 /* ViewController.swift */,
 				CF2A37561BA4836A00EC2455 /* Main.storyboard */,
@@ -135,6 +144,17 @@
 				CF2A37671BA4836A00EC2455 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D32734081BA4ADFB00799D57 /* PagesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D32734061BA4ADEE00799D57 /* HomeViewController.swift */,
+				D32734091BA4AE1800799D57 /* WishViewController.swift */,
+				D327340B1BA4AE2800799D57 /* GiftViewController.swift */,
+				D327340D1BA4AE3700799D57 /* FindFriendsViewController.swift */,
+			);
+			name = PagesViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +259,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF2A37551BA4836A00EC2455 /* ViewController.swift in Sources */,
+				D327340A1BA4AE1800799D57 /* WishViewController.swift in Sources */,
 				CF2A37531BA4836A00EC2455 /* AppDelegate.swift in Sources */,
+				D327340C1BA4AE2800799D57 /* GiftViewController.swift in Sources */,
+				D32734071BA4ADEE00799D57 /* HomeViewController.swift in Sources */,
+				D327340E1BA4AE3700799D57 /* FindFriendsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

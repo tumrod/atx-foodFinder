@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -7,7 +7,7 @@
         <!--HOME-->
         <scene sceneID="nYa-0m-Yoh">
             <objects>
-                <viewController storyboardIdentifier="pages-home" title="HOME" id="a55-CN-yrO" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="wish-give-home" title="HOME" id="a55-CN-yrO" customClass="HomeViewController" customModule="wishNgive" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WoP-kD-p6L"/>
                         <viewControllerLayoutGuide type="bottom" id="jPU-Yr-85C"/>
@@ -16,37 +16,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ou-Z2-dMI">
-                                <rect key="frame" x="168" y="218" width="39" height="30"/>
-                                <state key="normal" title="WISH">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="a6Q-Bl-OJb" kind="showDetail" id="1Uh-Mo-LAq"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MmI-fn-G5T">
                                 <rect key="frame" x="164" y="337" width="35" height="30"/>
                                 <state key="normal" title="GIVE">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vGA-xB-90A" kind="showDetail" id="wNI-WW-81a"/>
+                                    <segue destination="dvi-Zs-UwL" kind="show" id="lEm-Jg-iFX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ou-Z2-dMI">
+                                <rect key="frame" x="160" y="218" width="39" height="30"/>
+                                <state key="normal" title="WISH">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vGA-xB-90A" kind="show" id="tp2-oI-8kc"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Wish or Give" id="4IN-ay-k4d"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r5f-yL-caY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="280.5" y="291.5"/>
         </scene>
-        <!--View Controller-->
+        <!--WISH-->
         <scene sceneID="L4E-q9-c1D">
             <objects>
-                <viewController id="a6Q-Bl-OJb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="pages-wish" title="WISH" id="a6Q-Bl-OJb" customClass="WishViewController" customModule="wishNgive" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cWp-tI-Wdi"/>
                         <viewControllerLayoutGuide type="bottom" id="xFl-oO-Re8"/>
@@ -55,31 +56,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pTC-b1-SMH">
-                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="48" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pTC-b1-SMH">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zBc-gC-rZy">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zBc-gC-rZy" id="9vk-Ro-ENA">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gf9-bE-mFm">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="WISH" id="9cT-SU-ZTr">
-                                        <barButtonItem key="backBarButtonItem" title="Back" id="KvJ-oV-ATa"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pTC-b1-SMH" firstAttribute="top" secondItem="cWp-tI-Wdi" secondAttribute="bottom" id="GBe-sg-uK4"/>
+                            <constraint firstItem="xFl-oO-Re8" firstAttribute="top" secondItem="pTC-b1-SMH" secondAttribute="bottom" id="dHb-IO-qDk"/>
+                            <constraint firstAttribute="trailing" secondItem="pTC-b1-SMH" secondAttribute="trailing" id="eSj-fm-JK3"/>
+                            <constraint firstItem="pTC-b1-SMH" firstAttribute="leading" secondItem="Tyt-Qg-Kp8" secondAttribute="leading" id="tpJ-ZF-EEV"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Wish" id="L85-52-yB4"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="trf-Or-Lzm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="833.5" y="291.5"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="PwJ-Af-ieN">
+            <objects>
+                <navigationController storyboardIdentifier="pages-home" id="sel-Gs-SPg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cFX-BL-qjJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="a55-CN-yrO" kind="relationship" relationship="rootViewController" id="DnH-cJ-9cr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f7d-Eg-m4p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-368" y="292"/>
+        </scene>
         <!--Friends-->
         <scene sceneID="QH6-Rv-IcB">
             <objects>
-                <viewController title="Friends" id="vGA-xB-90A" sceneMemberID="viewController">
+                <viewController title="Friends" id="vGA-xB-90A" customClass="FindFriendsViewController" customModule="wishNgive" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="osU-gC-LMs"/>
                         <viewControllerLayoutGuide type="bottom" id="IW7-QN-UNO"/>
@@ -88,30 +113,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y2j-f9-xhm">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="SELECT FRIENDS" id="Jc0-O1-SGg">
-                                        <barButtonItem key="backBarButtonItem" title="BACK" id="zDu-5I-ROK"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rZb-NX-CeB">
-                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="eoL-zL-N21">
+                                <rect key="frame" x="0.0" y="73" width="375" height="44"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="rZb-NX-CeB">
+                                <rect key="frame" x="0.0" y="117" width="375" height="550"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <searchBar key="tableFooterView" contentMode="redraw" id="eoL-zL-N21">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                    <textInputTraits key="textInputTraits"/>
-                                </searchBar>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7iq-tc-cx9">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7iq-tc-cx9" id="Fso-jN-MgT">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="a6Q-Bl-OJb" kind="show" id="gYP-va-gs4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rZb-NX-CeB" firstAttribute="leading" secondItem="9LH-2J-V2x" secondAttribute="leading" id="0NH-ZB-lLN"/>
+                            <constraint firstAttribute="trailing" secondItem="rZb-NX-CeB" secondAttribute="trailing" id="2am-tR-3rH"/>
+                            <constraint firstItem="rZb-NX-CeB" firstAttribute="top" secondItem="eoL-zL-N21" secondAttribute="bottom" id="4qK-Jt-SoI"/>
+                            <constraint firstItem="IW7-QN-UNO" firstAttribute="top" secondItem="rZb-NX-CeB" secondAttribute="bottom" id="Ad5-aK-11v"/>
+                            <constraint firstItem="rZb-NX-CeB" firstAttribute="top" secondItem="eoL-zL-N21" secondAttribute="bottom" id="dZ0-XV-cpE"/>
+                            <constraint firstItem="eoL-zL-N21" firstAttribute="leading" secondItem="9LH-2J-V2x" secondAttribute="leading" id="gtY-Yi-LEK"/>
+                            <constraint firstAttribute="trailing" secondItem="eoL-zL-N21" secondAttribute="trailing" id="pqs-If-mHF"/>
+                            <constraint firstItem="eoL-zL-N21" firstAttribute="top" secondItem="osU-gC-LMs" secondAttribute="bottom" constant="9" id="uGq-Fu-On5"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4qK-Jt-SoI"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="dvi-Zs-UwL" kind="showDetail" id="xze-do-Uv0"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WNC-b7-Wa9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -120,7 +160,7 @@
         <!--Give-->
         <scene sceneID="9Cs-Y3-Zqg">
             <objects>
-                <viewController title="Give" id="dvi-Zs-UwL" sceneMemberID="viewController">
+                <viewController title="Give" id="dvi-Zs-UwL" customClass="GiftViewController" customModule="wishNgive" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dLd-zD-H36"/>
                         <viewControllerLayoutGuide type="bottom" id="KIs-Yp-o4g"/>
@@ -129,17 +169,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7cZ-EQ-8sM">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <items>
-                                    <navigationItem title="GIVE" id="l3p-jw-zFn">
-                                        <barButtonItem key="backBarButtonItem" title="BACK" id="3gc-fa-gKh"/>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pd6-n1-H8i">
                                 <rect key="frame" x="0.0" y="72" width="375" height="595"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="muP-zK-Exa">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="muP-zK-Exa" id="ohQ-sA-Dv6">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

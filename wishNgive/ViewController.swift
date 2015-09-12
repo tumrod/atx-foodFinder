@@ -20,7 +20,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         if (FBSDKAccessToken.currentAccessToken() != nil)
         {
             // User is already logged in, do work such as go to next view controller.
-            var pagesViewController = appDelegate.pagesStoryBoard.instantiateViewControllerWithIdentifier("pages-home") as! UIViewController
+            var pagesViewController = appDelegate.pagesStoryBoard.instantiateViewControllerWithIdentifier("pages-home") as! UINavigationController
             view.addSubview(pagesViewController.view)
             presentViewController(pagesViewController, animated: true, completion: nil)
             
@@ -58,7 +58,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             
         }
         
-        var pagesViewController = appDelegate.pagesStoryBoard.instantiateViewControllerWithIdentifier("pages-home") as! UIViewController
+        var pagesViewController = appDelegate.pagesStoryBoard.instantiateViewControllerWithIdentifier("pages-home") as! UINavigationController
         view.addSubview(pagesViewController.view)
         presentViewController(pagesViewController, animated: true, completion: nil)
     }
@@ -88,8 +88,13 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         })
     }
     
-    
-    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.destinationViewController.isKindOfClass(ViewController) {
+            var viewController = segue.destinationViewController as! UIViewController
+            viewController.title = segue.identifier
+        }
+    }
 }
 
 
