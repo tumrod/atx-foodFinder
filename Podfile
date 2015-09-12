@@ -2,6 +2,7 @@
 platform :ios, '8.0'
 use_frameworks!
 
+# pod dependencies
 target 'wishNgive' do
 
     pod 'Firebase', '>= 2.3.3'
