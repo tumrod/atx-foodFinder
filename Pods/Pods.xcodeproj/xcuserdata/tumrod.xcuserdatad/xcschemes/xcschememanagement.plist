@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AFNetworking.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -24,13 +29,34 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SQLite.swift.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>71A033B6946B1FB96D283209309CA38E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>78B25404931D03F4A10B475F8A2FFC06</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9290830AFCAF380D513FE985C5C135C3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9E767FFD7B5187072897FA667D7CE258</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A85619BC77BB72CAC043DC979878C51A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

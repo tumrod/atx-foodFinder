@@ -38,27 +38,12 @@ PODS:
   - FBSDKLoginKit (4.5.1):
     - FBSDKCoreKit
   - Firebase (2.3.3)
-  - SQLite.swift (0.1.0.pre):
-    - SQLite.swift/Library (= 0.1.0.pre)
-  - SQLite.swift/Core (0.1.0.pre)
-  - SQLite.swift/Library (0.1.0.pre):
-    - SQLite.swift/Core
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - FBSDKCoreKit (= 4.5.1)
   - FBSDKLoginKit (= 4.5.1)
   - Firebase (>= 2.3.3)
-  - SQLite.swift (from `https://github.com/stephencelis/SQLite.swift.git`)
-
-EXTERNAL SOURCES:
-  SQLite.swift:
-    :git: https://github.com/stephencelis/SQLite.swift.git
-
-CHECKOUT OPTIONS:
-  SQLite.swift:
-    :commit: d87e05da167bdded01ae74001c5adda865346867
-    :git: https://github.com/stephencelis/SQLite.swift.git
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
@@ -66,6 +51,5 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: f335eaf6865e1e1597dee1debfb533045500da47
   FBSDKLoginKit: 225cc9a388a92916ee3f3bb14422017b6e44b65b
   Firebase: 2db60272f68ce40c7d47e5ae6eddc16977c65d4c
-  SQLite.swift: 62bdf79b05b2a88b94d4b8f9a3b7aa94bfedc660
 
 COCOAPODS: 0.38.2

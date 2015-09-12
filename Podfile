@@ -7,7 +7,6 @@ target 'wishNgive' do
     pod 'Firebase', '>= 2.3.3'
     pod 'FBSDKCoreKit’, ‘4.5.1’
     pod 'FBSDKLoginKit’, ‘4.5.1’
-    pod 'SQLite.swift', git: 'https://github.com/stephencelis/SQLite.swift.git'
     pod 'AFNetworking', '~> 2.0'
 
 end
