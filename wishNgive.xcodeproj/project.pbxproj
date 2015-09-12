@@ -103,11 +103,11 @@
 				CF2A37521BA4836A00EC2455 /* AppDelegate.swift */,
 				CF2A37541BA4836A00EC2455 /* ViewController.swift */,
 				CF2A37561BA4836A00EC2455 /* Main.storyboard */,
+				B8EE66711BA49D6C00AB4760 /* Pages.storyboard */,
 				CF2A37721BA4887C00EC2455 /* Bridging-Header.h */,
 				CF2A37591BA4836A00EC2455 /* Images.xcassets */,
 				CF2A375B1BA4836A00EC2455 /* LaunchScreen.xib */,
 				CF2A37501BA4836A00EC2455 /* Supporting Files */,
-				B8EE66711BA49D6C00AB4760 /* Pages.storyboard */,
 			);
 			path = wishNgive;
 			sourceTree = "<group>";

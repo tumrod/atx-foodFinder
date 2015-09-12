@@ -10,6 +10,7 @@
 import UIKit
 
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
+    let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +20,10 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         if (FBSDKAccessToken.currentAccessToken() != nil)
         {
             // User is already logged in, do work such as go to next view controller.
+            var pagesViewController = appDelegate.pagesStoryBoard.instantiateViewControllerWithIdentifier("pages-home") as! UIViewController
+            view.addSubview(pagesViewController.view)
+            presentViewController(pagesViewController, animated: true, completion: nil)
+            
         }
         else
         {
@@ -50,7 +55,12 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             {
                 // Do work
             }
+            
         }
+        
+        var pagesViewController = appDelegate.pagesStoryBoard.instantiateViewControllerWithIdentifier("pages-home") as! UIViewController
+        view.addSubview(pagesViewController.view)
+        presentViewController(pagesViewController, animated: true, completion: nil)
     }
     
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
