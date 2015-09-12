@@ -22,7 +22,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dvi-Zs-UwL" kind="show" id="lEm-Jg-iFX"/>
+                                    <segue destination="vGA-xB-90A" kind="show" id="uqr-ci-x3r"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ou-Z2-dMI">
@@ -31,7 +31,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vGA-xB-90A" kind="show" id="tp2-oI-8kc"/>
+                                    <segue destination="a6Q-Bl-OJb" kind="show" id="m0t-PL-dLw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -128,7 +128,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="a6Q-Bl-OJb" kind="show" id="gYP-va-gs4"/>
+                                            <segue destination="dvi-Zs-UwL" kind="show" id="3eW-xP-PDK"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
