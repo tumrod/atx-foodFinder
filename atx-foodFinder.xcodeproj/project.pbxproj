@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A85C400CA49F9E9135E53AF /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 39800B92D5A1DAF097A31201 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		CF2A36F71BA46BE900EC2455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A36F61BA46BE900EC2455 /* AppDelegate.swift */; };
 		CF2A36F91BA46BE900EC2455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A36F81BA46BE900EC2455 /* ViewController.swift */; };
 		CF2A36FC1BA46BE900EC2455 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF2A36FA1BA46BE900EC2455 /* Main.storyboard */; };
@@ -26,6 +27,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A341D608B4960F9D8784D20 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		39800B92D5A1DAF097A31201 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		955CE1A90EFE5C91C8AB9AB7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		CF2A36F11BA46BE900EC2455 /* atx-foodFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "atx-foodFinder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2A36F51BA46BE900EC2455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CF2A36F61BA46BE900EC2455 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A85C400CA49F9E9135E53AF /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +61,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		386A82DADD29C8D73D59965B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A341D608B4960F9D8784D20 /* Pods.debug.xcconfig */,
+				955CE1A90EFE5C91C8AB9AB7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E0E123DC6A019D6548D553E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39800B92D5A1DAF097A31201 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CF2A36E81BA46BE900EC2455 = {
 			isa = PBXGroup;
 			children = (
 				CF2A36F31BA46BE900EC2455 /* atx-foodFinder */,
 				CF2A37091BA46BE900EC2455 /* atx-foodFinderTests */,
 				CF2A36F21BA46BE900EC2455 /* Products */,
+				386A82DADD29C8D73D59965B /* Pods */,
+				9E0E123DC6A019D6548D553E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,9 +143,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CF2A37101BA46BE900EC2455 /* Build configuration list for PBXNativeTarget "atx-foodFinder" */;
 			buildPhases = (
+				F178568892FBEF1DC66C59F9 /* Check Pods Manifest.lock */,
 				CF2A36ED1BA46BE900EC2455 /* Sources */,
 				CF2A36EE1BA46BE900EC2455 /* Frameworks */,
 				CF2A36EF1BA46BE900EC2455 /* Resources */,
+				7AEC08DEDE5C112ADF816E59 /* Embed Pods Frameworks */,
+				F468E0C7215D44F6BC7337BD /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,6 +233,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7AEC08DEDE5C112ADF816E59 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F178568892FBEF1DC66C59F9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F468E0C7215D44F6BC7337BD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CF2A36ED1BA46BE900EC2455 /* Sources */ = {
@@ -338,6 +413,7 @@
 		};
 		CF2A37111BA46BE900EC2455 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A341D608B4960F9D8784D20 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "atx-foodFinder/Info.plist";
@@ -348,6 +424,7 @@
 		};
 		CF2A37121BA46BE900EC2455 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 955CE1A90EFE5C91C8AB9AB7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "atx-foodFinder/Info.plist";
@@ -409,6 +486,7 @@
 				CF2A37121BA46BE900EC2455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF2A37131BA46BE900EC2455 /* Build configuration list for PBXNativeTarget "atx-foodFinderTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +495,7 @@
 				CF2A37151BA46BE900EC2455 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
