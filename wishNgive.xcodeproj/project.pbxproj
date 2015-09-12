@@ -11,6 +11,7 @@
 		B84BDB4A1BA4C33C00A0BCB0 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84BDB491BA4C33C00A0BCB0 /* Users.swift */; };
 		B8C4315A1BA4CD33001F079C /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C431591BA4CD33001F079C /* Item.swift */; };
 		B8C4315C1BA4CD84001F079C /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C4315B1BA4CD84001F079C /* List.swift */; };
+		B8C431611BA4D16E001F079C /* Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8C431601BA4D16E001F079C /* Table.swift */; };
 		B8EE66721BA49D6C00AB4760 /* Pages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8EE66711BA49D6C00AB4760 /* Pages.storyboard */; };
 		CF2A37531BA4836A00EC2455 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A37521BA4836A00EC2455 /* AppDelegate.swift */; };
 		CF2A37551BA4836A00EC2455 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF2A37541BA4836A00EC2455 /* ViewController.swift */; };
@@ -47,6 +48,7 @@
 		B84BDB491BA4C33C00A0BCB0 /* Users.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		B8C431591BA4CD33001F079C /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		B8C4315B1BA4CD84001F079C /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		B8C431601BA4D16E001F079C /* Table.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Table.swift; sourceTree = "<group>"; };
 		B8EE66711BA49D6C00AB4760 /* Pages.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pages.storyboard; sourceTree = "<group>"; };
 		CF2A374D1BA4836A00EC2455 /* wishNgive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wishNgive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF2A37511BA4836A00EC2455 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				CF2A37811BA4BA8D00EC2455 /* UserDataManager.swift */,
 				B84BDB491BA4C33C00A0BCB0 /* Users.swift */,
 				B8C431591BA4CD33001F079C /* Item.swift */,
+				B8C431601BA4D16E001F079C /* Table.swift */,
 				B8C4315B1BA4CD84001F079C /* List.swift */,
 				D32734081BA4ADFB00799D57 /* PagesViewController */,
 				CF2A37521BA4836A00EC2455 /* AppDelegate.swift */,
@@ -363,6 +366,7 @@
 				D327340C1BA4AE2800799D57 /* GiftViewController.swift in Sources */,
 				D32734071BA4ADEE00799D57 /* HomeViewController.swift in Sources */,
 				D327340E1BA4AE3700799D57 /* FindFriendsViewController.swift in Sources */,
+				B8C431611BA4D16E001F079C /* Table.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
