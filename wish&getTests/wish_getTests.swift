@@ -1,6 +1,6 @@
 //
-//  atx_foodFinderTests.swift
-//  atx-foodFinderTests
+//  wish_getTests.swift
+//  wish&getTests
 //
 //  Created by Tipparat Umrod on 9/12/15.
 //  Copyright (c) 2015 div-hack. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class atx_foodFinderTests: XCTestCase {
+class wish_getTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

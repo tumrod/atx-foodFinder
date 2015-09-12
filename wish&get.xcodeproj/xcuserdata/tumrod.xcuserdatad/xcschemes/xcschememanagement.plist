@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>atx-foodFinder.xcscheme</key>
+		<key>wish&amp;get.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>CF2A36F01BA46BE900EC2455</key>
+		<key>CF2A371E1BA4819300EC2455</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>CF2A37051BA46BE900EC2455</key>
+		<key>CF2A37331BA4819300EC2455</key>
 		<dict>
 			<key>primary</key>
 			<true/>
