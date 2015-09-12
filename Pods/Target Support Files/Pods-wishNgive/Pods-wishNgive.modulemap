@@ -1,0 +1,6 @@
+framework module Pods_wishNgive {
+  umbrella header "Pods-wishNgive-umbrella.h"
+
+  export *
+  module * { export * }
+}
