@@ -10,4 +10,8 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBAction func testBtn(sender: AnyObject) {
+        var uTest = UserDataManager()
+        uTest.writeData()
+    }
 }
