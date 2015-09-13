@@ -12,6 +12,7 @@ import SwiftyJSON
 
 class UserDataManager {
     let myRootRef = Firebase(url:"https://wishngive.firebaseio.com/")
+    var mainUser:Users?
     
     func writeData(u: Users) {
         
@@ -67,7 +68,7 @@ class UserDataManager {
             }
             else
             {
-                println("fetched user: \(result)")
+                //println("fetched user: \(result)")
                 var resultDictionary = result as! Dictionary<String, AnyObject>
                 
                 
@@ -78,9 +79,12 @@ class UserDataManager {
                     uId = Int(nsid)
                 }
 
-                println("User Name is: \(uName) user Id is: \(uId)")
-                var u = Users(userName: uName, fbId: uId)
-                u?.description()
+                //println("User Name is: \(uName) user Id is: \(uId)")
+                
+                self.mainUser = Users(userName: uName, fbId: uId)!
+                
+                //u?.description()
+                
                 // No longer valid
                 //let userEmail : NSString = result.valueForKey("email") as! NSString
                 //println("User Email is: \(userEmail)")
@@ -92,7 +96,7 @@ class UserDataManager {
     func returnUserFriends()
     {
         
-        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "10207791439402728/friends", parameters: nil)
+        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me/friends", parameters: nil)
         graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
             
             if ((error) != nil)
@@ -112,14 +116,21 @@ class UserDataManager {
                 var friendList = responseDict["data"] as? Array<Dictionary<String, AnyObject>>
                 
                 if let friends = friendList {
-                    
+        
                     for var index = 0; index < friends.count; index++ {
+                        
                         var friendObject = friends[index] as Dictionary<String, AnyObject>
-                        var friendName = friendObject["name"]!
-                        var friendId = friendObject["id"]!
-                        println("freind name: \(friendName) friend id: \(friendId)")
+                        
+                        var friendName = friendObject["name"] as! String
+                        var friendId = friendObject["id"] as! String
+                        var friendIdInt = friendId.toInt()!
+                        
+                        var friendUser = Users(userName:friendName, fbId: friendIdInt)
+                        self.mainUser!.addFriend(friendUser!)
+    
+                        
                     }
-                    
+                    self.mainUser?.description()
                 }
                 
             }

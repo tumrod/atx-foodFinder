@@ -38,13 +38,13 @@ class Users {
     
     func description() {
         println("Data for: \(userName)")
-        print("wish: ")
+        println("wish: ")
         for wish in wishList {
             print("\(wish.itemName) ")
         }
         print("friends: ")
         for friend in friendList {
-            print("\(friend.userName) ")
+            print("\(friend.fbId) ")
         }
     }
     
