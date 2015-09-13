@@ -38,12 +38,14 @@ PODS:
   - FBSDKLoginKit (4.5.1):
     - FBSDKCoreKit
   - Firebase (2.3.3)
+  - SwiftyJSON (2.2.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
   - FBSDKCoreKit (= 4.5.1)
   - FBSDKLoginKit (= 4.5.1)
   - Firebase (>= 2.3.3)
+  - SwiftyJSON (~> 2.2.1)
 
 SPEC CHECKSUMS:
   AFNetworking: 79f7eb1a0fcfa7beb409332b2ca49afe9ce53b05
@@ -51,5 +53,6 @@ SPEC CHECKSUMS:
   FBSDKCoreKit: f335eaf6865e1e1597dee1debfb533045500da47
   FBSDKLoginKit: 225cc9a388a92916ee3f3bb14422017b6e44b65b
   Firebase: 2db60272f68ce40c7d47e5ae6eddc16977c65d4c
+  SwiftyJSON: ae2d0a3d68025d136602a33c4ee215091ced3e33
 
 COCOAPODS: 0.38.2

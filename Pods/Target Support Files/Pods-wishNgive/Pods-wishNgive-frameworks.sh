@@ -56,10 +56,12 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework 'Pods-wishNgive/Bolts.framework'
   install_framework 'Pods-wishNgive/FBSDKCoreKit.framework'
   install_framework 'Pods-wishNgive/FBSDKLoginKit.framework'
+  install_framework 'Pods-wishNgive/SwiftyJSON.framework'
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework 'Pods-wishNgive/AFNetworking.framework'
   install_framework 'Pods-wishNgive/Bolts.framework'
   install_framework 'Pods-wishNgive/FBSDKCoreKit.framework'
   install_framework 'Pods-wishNgive/FBSDKLoginKit.framework'
+  install_framework 'Pods-wishNgive/SwiftyJSON.framework'
 fi
