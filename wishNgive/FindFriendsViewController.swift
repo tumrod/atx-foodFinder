@@ -8,27 +8,51 @@
 
 import UIKit
 
-class FindFriendsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class FindFriendsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
     @IBOutlet weak var friendsTableView: UITableView!
     
     private var friendsTableData: [String]? {
         didSet {
+            selectedFriendsTableData = friendsTableData
+        }
+    }
+    
+    private var selectedFriendsTableData: [String]? {
+        didSet {
             friendsTableView.reloadData()
         }
     }
+
     private var friendObjectList: Array<Dictionary<String, AnyObject>>?
     
     override func viewDidLoad() {
+        
+        SearchBar.delegate = self
         returnUserFriends()
     }
+    
+    @IBOutlet weak var SearchBar: UISearchBar!
+    
+    func searchBar(searchBar: UISearchBar, textDidChange searchText: String) {
+        
+        selectedFriendsTableData = friendsTableData
+        
+        if !searchText.isEmpty {
+            selectedFriendsTableData = selectedFriendsTableData!.filter({
+                ($0 as String).lowercaseString.rangeOfString(searchText.lowercaseString) != nil
+            })
+        }
+    }
+    
+    
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let friendTable = friendsTableData {
+        if let friendTable = selectedFriendsTableData {
             return friendTable.count
         }
         
@@ -40,7 +64,7 @@ class FindFriendsViewController: UIViewController, UITableViewDelegate, UITableV
         
         var friendListCell = tableView.dequeueReusableCellWithIdentifier("friendListTableViewCell") as! FindFriendsCell
         
-        if let friendTable = friendsTableData {
+        if let friendTable = selectedFriendsTableData {
             friendListCell.friendNameLabel.text = friendTable[indexPath.row]
         }
         
