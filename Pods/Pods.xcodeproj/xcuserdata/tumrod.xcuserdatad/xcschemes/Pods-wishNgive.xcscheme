@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "247C7DB6E8A5764F84343D51"
+               BlueprintIdentifier = "A4E17563C3A3AB1796F53C90"
                BuildableName = "Pods_wishNgive.framework"
                BlueprintName = "Pods-wishNgive"
                ReferencedContainer = "container:Pods.xcodeproj">

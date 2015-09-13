@@ -15,13 +15,13 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view, typically from a nib.
         
         if (FBSDKAccessToken.currentAccessToken() != nil)
         {
             // User is already logged in, do work such as go to next view controller.
-            
+            initDb()
             showHomeViewController()
             
         }
@@ -34,6 +34,17 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             loginView.delegate = self
         }
         
+    }
+    
+    // initialize database
+    func initDb() {
+        var dbMgr = UserDataManager()
+        dbMgr.returnUserData()
+        dbMgr.returnUserFriends()
+        
+        //var user = dbMgr.inputUserData("Tipp")
+
+        //dbMgr.writeData(user)
     }
     
     // Facebook Delegate Methods
@@ -63,7 +74,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         println("User Logged Out")
     }
-       
+    
     private func showHomeViewController() {
         
         var pagesViewController = appDelegate.pagesStoryBoard.instantiateViewControllerWithIdentifier("pages-home") as! UINavigationController

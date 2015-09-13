@@ -9,7 +9,7 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    
     @IBOutlet weak var usernameLabel: UILabel!
     
     var name: String? {
@@ -18,21 +18,20 @@ class HomeViewController: UIViewController {
         }
     }
     
-    var userId: Int?
-    
     override func viewDidLoad() {
         usernameLabel.text = "Hello"
         
-        returnUserData()
+        //returnUserData()
     }
     
-    @IBAction func testBtn(sender: AnyObject) {
-        var uTest = UserDataManager()
-        uTest.writeData()
-    }
+    /*@IBAction func testBtn(sender: AnyObject) {
+    var uTest = UserDataManager()
+    uTest.writeData()
+    }*/
     
     
-    func returnUserData()
+    
+    /*func returnUserData()
     {
         let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: nil)
         graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
@@ -48,13 +47,12 @@ class HomeViewController: UIViewController {
                 let userName : NSString = result.valueForKey("name") as! NSString
                 self.name = result.valueForKey("name") as? String
                 println("User Name is: \(userName)")
-                
-                self.userId = result.valueForKey("id") as? Int
                 // No longer valid
                 //let userEmail : NSString = result.valueForKey("email") as! NSString
                 //println("User Email is: \(userEmail)")
+                
             }
         })
-    }
-
+    }*/
+    
 }
