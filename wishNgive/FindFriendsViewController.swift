@@ -50,7 +50,7 @@ class FindFriendsViewController: UIViewController, UITableViewDelegate, UITableV
     func returnUserFriends()
     {
     
-        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "10207791439402728/friends", parameters: nil)
+        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "10204523977649021/friends", parameters: nil)
         graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
             
             if ((error) != nil)
@@ -73,10 +73,13 @@ class FindFriendsViewController: UIViewController, UITableViewDelegate, UITableV
                     
                     for var index = 0; index < friends.count; index++ {
                         var friendObject = friends[index] as Dictionary<String, AnyObject>
+                        var fbID = friendObject["id"]!
+                        println("fbID: \(fbID)")
                         self.friendsTableData?.append(friendObject["name"] as! String)
                     }
 
                 }
+                
 
             }
         })

@@ -9,6 +9,7 @@ target 'wishNgive' do
     pod 'FBSDKCoreKit’, ‘4.5.1’
     pod 'FBSDKLoginKit’, ‘4.5.1’
     pod 'AFNetworking', '~> 2.0'
+    pod 'SwiftyJSON', '~>2.2.1'
 
 end
 
