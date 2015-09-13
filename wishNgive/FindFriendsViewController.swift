@@ -29,7 +29,7 @@ class FindFriendsViewController: UIViewController, UITableViewDelegate, UITableV
     override func viewDidLoad() {
         
         SearchBar.delegate = self
-        returnUserFriends()
+        //returnUserFriends()
     }
     
     @IBOutlet weak var SearchBar: UISearchBar!
@@ -72,7 +72,7 @@ class FindFriendsViewController: UIViewController, UITableViewDelegate, UITableV
         return cell
     }
     
-    func returnUserFriends()
+    /*func returnUserFriends()
     {
     
         let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "10204523977649021/friends", parameters: nil)
@@ -109,7 +109,7 @@ class FindFriendsViewController: UIViewController, UITableViewDelegate, UITableV
 
             }
         })
-    }
+    }*/
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.destinationViewController.isKindOfClass(GiftViewController) {

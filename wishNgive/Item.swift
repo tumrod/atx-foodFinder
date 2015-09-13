@@ -10,15 +10,16 @@ import UIKit
 
 class Item {
     
-    var itemId: Int
+    //var itemId: Int
     var itemName: String
     
-    init?(itemId: Int, itemName: String) {
-        self.itemId = itemId
+    init?(itemName: String) {
+        //self.itemId = itemId
         self.itemName = itemName
         
         if itemName.isEmpty {
             return nil
         }
     }
+    
 }

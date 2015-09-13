@@ -12,16 +12,17 @@ import UIKit
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    let dbMgr = UserDataManager.userManagerSharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view, typically from a nib.
         
         if (FBSDKAccessToken.currentAccessToken() != nil)
         {
             // User is already logged in, do work such as go to next view controller.
-            
+            initDb()
             showHomeViewController()
             
         }
@@ -32,6 +33,19 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             loginView.center = self.view.center
             loginView.readPermissions = ["public_profile", "email", "user_friends"]
             loginView.delegate = self
+        }
+        
+    }
+    
+    // initialize database
+    func initDb() {
+        
+        dbMgr.fetchUserData() {
+            (user) -> Void in
+            
+            self.dbMgr.fetchUserFriends() {
+                self.dbMgr.writeData()
+            }
         }
         
     }
@@ -63,7 +77,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         println("User Logged Out")
     }
-       
+    
     private func showHomeViewController() {
         
         var pagesViewController = appDelegate.pagesStoryBoard.instantiateViewControllerWithIdentifier("pages-home") as! UINavigationController
