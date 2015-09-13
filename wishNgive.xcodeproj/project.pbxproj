@@ -32,6 +32,7 @@
 		D32734121BA4DAD300799D57 /* NewItemWishListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32734111BA4DAD300799D57 /* NewItemWishListCell.swift */; };
 		D32734151BA4FC3400799D57 /* OnceUponATime.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D32734141BA4FC3400799D57 /* OnceUponATime.ttf */; };
 		D32734171BA5095600799D57 /* Pink Ladies and Peanutbutter Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D32734161BA5095600799D57 /* Pink Ladies and Peanutbutter Regular.ttf */; };
+		D32734191BA5BA9A00799D57 /* FindFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32734181BA5BA9A00799D57 /* FindFriendsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		D32734111BA4DAD300799D57 /* NewItemWishListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemWishListCell.swift; sourceTree = "<group>"; };
 		D32734141BA4FC3400799D57 /* OnceUponATime.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OnceUponATime.ttf; sourceTree = "<group>"; };
 		D32734161BA5095600799D57 /* Pink Ladies and Peanutbutter Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pink Ladies and Peanutbutter Regular.ttf"; sourceTree = "<group>"; };
+		D32734181BA5BA9A00799D57 /* FindFriendsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				D32734111BA4DAD300799D57 /* NewItemWishListCell.swift */,
+				D32734181BA5BA9A00799D57 /* FindFriendsCell.swift */,
 			);
 			name = PagesViewControllerCells;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D32734191BA5BA9A00799D57 /* FindFriendsCell.swift in Sources */,
 				B84BDB4A1BA4C33C00A0BCB0 /* Users.swift in Sources */,
 				B8C4315A1BA4CD33001F079C /* Item.swift in Sources */,
 				CF2A37821BA4BA8D00EC2455 /* UserDataManager.swift in Sources */,

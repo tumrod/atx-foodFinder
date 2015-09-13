@@ -37,9 +37,11 @@ class FindFriendsViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell: UITableViewCell!
         
-        var friendListCell = tableView.dequeueReusableCellWithIdentifier("friendListTableViewCell") as! UITableViewCell
-
-        friendListCell.textLabel?.text = "Hello "
+        var friendListCell = tableView.dequeueReusableCellWithIdentifier("friendListTableViewCell") as! FindFriendsCell
+        
+        if let friendTable = friendsTableData {
+            friendListCell.friendNameLabel.text = friendTable[indexPath.row]
+        }
         
         cell = friendListCell
         return cell
@@ -59,10 +61,25 @@ class FindFriendsViewController: UIViewController, UITableViewDelegate, UITableV
             else
             {
                 println("fetched friends: \(result)")
+                self.friendsTableData = [String]()
+                
+                var responseDict = result as! Dictionary<String, AnyObject>
+                
+                println("response: \(responseDict)")
+                
+                var friendList = responseDict["data"] as? Array<Dictionary<String, AnyObject>>
+                
+                if let friends = friendList {
+                    
+                    for var index = 0; index < friends.count; index++ {
+                        var friendObject = friends[index] as Dictionary<String, AnyObject>
+                        self.friendsTableData?.append(friendObject["name"] as! String)
+                    }
+
+                }
 
             }
         })
     }
-
     
 }
