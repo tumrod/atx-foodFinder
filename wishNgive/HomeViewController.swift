@@ -11,6 +11,8 @@ import UIKit
 class HomeViewController: UIViewController {
     
     @IBOutlet weak var usernameLabel: UILabel!
+    var userDataMan = UserDataManager.userManagerSharedInstance
+    private var userObject: Users?
     
     var name: String? {
         didSet {
@@ -20,6 +22,12 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         usernameLabel.text = "Hello"
+        setUser({
+            
+            if let userName = self.userObject?.userName {
+                self.usernameLabel.text = "Hello \(userName)"
+            }
+        })
         
         //returnUserData()
     }
@@ -29,7 +37,12 @@ class HomeViewController: UIViewController {
     uTest.writeData()
     }*/
     
-    
+    func setUser(completion: (Void -> Void)?) {
+        userDataMan.getUser() { (main) -> Void in
+            self.userObject = main
+            completion!()
+        }
+    }
     
     /*func returnUserData()
     {

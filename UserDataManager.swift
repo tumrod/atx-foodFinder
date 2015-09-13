@@ -14,6 +14,8 @@ class UserDataManager {
     let myRootRef = Firebase(url:"https://wishngive.firebaseio.com/")
     var mainUser:Users?
     
+    static let userManagerSharedInstance = UserDataManager()
+    
     func writeData(u: Users) {
         
         // Write data to Firebase
@@ -38,25 +40,17 @@ class UserDataManager {
             println("\(snapshot.key) -> \(snapshot.value)")
         })
     }
+
     
-    func inputUserData(name: String/*, friendList:[String], wishlist:[String]*/) -> Users{
-        var u = Users.init(userName:name, fbId:0)!
+    func getUser(completion: ((main: Users) -> Void)?){
         
-        // in a loop because of many friends
-        var friend = Users.init(userName:"bob's friend", fbId:1 /*userName: String*/)!
-        u.addFriend(friend)
-        
-        // in a loop because of many wishes
-        var wishlist = ["pen", "pencil"]
-        for w in wishlist {
-            var i = Item.init(itemName: w)!
-            u.addItem(i)
-        }
-        
-        return u
+        fetchUserData({
+            (user) -> Void in
+            completion!(main: user)
+        })
     }
     
-    func returnUserData()
+    func fetchUserData(completion: (Users -> Void)? )
     {
         let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: nil)
         graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
@@ -82,7 +76,7 @@ class UserDataManager {
                 //println("User Name is: \(uName) user Id is: \(uId)")
                 
                 self.mainUser = Users(userName: uName, fbId: uId)!
-                
+                completion!(self.mainUser!)
                 //u?.description()
                 
                 // No longer valid
@@ -93,7 +87,7 @@ class UserDataManager {
         })
     }
     
-    func returnUserFriends()
+    func fetchUserFriends(completion: (Void -> Void)?)
     {
         
         let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me/friends", parameters: nil)
@@ -131,6 +125,8 @@ class UserDataManager {
                         
                     }
                     self.mainUser?.description()
+                    
+                    completion!()
                 }
                 
             }

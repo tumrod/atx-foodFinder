@@ -12,6 +12,7 @@ import UIKit
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    let dbMgr = UserDataManager.userManagerSharedInstance
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,13 +39,15 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
     
     // initialize database
     func initDb() {
-        var dbMgr = UserDataManager()
-        dbMgr.returnUserData()
-        dbMgr.returnUserFriends()
         
-        //var user = dbMgr.inputUserData("Tipp")
-
-        //dbMgr.writeData(user)
+        dbMgr.fetchUserData() {
+            (user) -> Void in
+            
+            self.dbMgr.fetchUserFriends() {
+                //self.dbMgr.writeData(user)
+            }
+        }
+        
     }
     
     // Facebook Delegate Methods
