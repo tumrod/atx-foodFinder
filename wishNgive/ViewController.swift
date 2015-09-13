@@ -44,7 +44,7 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             (user) -> Void in
             
             self.dbMgr.fetchUserFriends() {
-                //self.dbMgr.writeData(user)
+                self.dbMgr.writeData()
             }
         }
         

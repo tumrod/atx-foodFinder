@@ -16,20 +16,20 @@ class UserDataManager {
     
     static let userManagerSharedInstance = UserDataManager()
     
-    func writeData(u: Users) {
+    func writeData() {
         
         // Write data to Firebase
         var usersRef = myRootRef.childByAppendingPath("users/")
         
         //var u = inputUserData("bob")
-        var uRef = usersRef.childByAppendingPath("\(u.userName)/")
+        var uRef = usersRef.childByAppendingPath("\(self.mainUser!.userName)/")
         
         var wishListRef = uRef.childByAppendingPath("wishList/")
-        wishListRef.setValue(u.getWishList())
+        wishListRef.setValue(self.mainUser!.getWishList())
         
         
         var friendListRef = uRef.childByAppendingPath("friends/")
-        friendListRef.setValue(u.getFriendList())
+        friendListRef.setValue(self.mainUser!.getFriendList())
         
     }
     
