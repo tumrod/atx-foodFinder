@@ -17,6 +17,7 @@ class FindFriendsViewController: UIViewController, UITableViewDelegate, UITableV
             friendsTableView.reloadData()
         }
     }
+    private var friendObjectList: Array<Dictionary<String, AnyObject>>?
     
     override func viewDidLoad() {
         returnUserFriends()
@@ -70,6 +71,7 @@ class FindFriendsViewController: UIViewController, UITableViewDelegate, UITableV
                 var friendList = responseDict["data"] as? Array<Dictionary<String, AnyObject>>
                 
                 if let friends = friendList {
+                    self.friendObjectList = friends
                     
                     for var index = 0; index < friends.count; index++ {
                         var friendObject = friends[index] as Dictionary<String, AnyObject>
@@ -81,5 +83,18 @@ class FindFriendsViewController: UIViewController, UITableViewDelegate, UITableV
             }
         })
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.destinationViewController.isKindOfClass(GiftViewController) {
+            var giveVC = segue.destinationViewController as! GiftViewController
+            var indexPath = self.friendsTableView.indexPathForSelectedRow()
+            
+            if let friends = friendObjectList {
+                giveVC.user = friends[indexPath!.row]
+
+            }
+        }
+    }
+    
     
 }

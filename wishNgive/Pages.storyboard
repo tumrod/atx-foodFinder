@@ -7,6 +7,7 @@
         <mutableArray key="OnceUponATime.ttf">
             <string>OnceUponATime</string>
             <string>OnceUponATime</string>
+            <string>OnceUponATime</string>
         </mutableArray>
         <mutableArray key="Pink Ladies and Peanutbutter Regular.ttf">
             <string>Pink_Ladies_and_Peanutbutte</string>
@@ -333,14 +334,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="pd6-n1-H8i">
-                                <rect key="frame" x="0.0" y="72" width="375" height="595"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghk-Hh-raZ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="69"/>
+                                <color key="backgroundColor" red="0.59242195509999995" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="6F8-0x-mWd"/>
+                                    <constraint firstAttribute="width" constant="375" id="M7x-bv-91z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="OnceUponATime" family="OnceUponATime" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="yaI-8A-YEE">
+                                <rect key="frame" x="0.0" y="132" width="375" height="535"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="4S3-2O-WMu"/>
+                                </constraints>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="muP-zK-Exa">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Teg-8e-uUJ">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="muP-zK-Exa" id="ohQ-sA-Dv6">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Teg-8e-uUJ" id="YvH-6L-NHj">
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -348,8 +363,27 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yaI-8A-YEE" secondAttribute="trailing" id="CK9-Cd-4DT"/>
+                            <constraint firstItem="yaI-8A-YEE" firstAttribute="leading" secondItem="iaE-mh-Nlc" secondAttribute="leading" id="JDk-gY-2At"/>
+                            <constraint firstItem="ghk-Hh-raZ" firstAttribute="top" secondItem="iaE-mh-Nlc" secondAttribute="top" constant="64" id="Nf8-wh-hGW"/>
+                            <constraint firstItem="KIs-Yp-o4g" firstAttribute="top" secondItem="yaI-8A-YEE" secondAttribute="bottom" id="T2k-Xx-q8V"/>
+                            <constraint firstItem="ghk-Hh-raZ" firstAttribute="leading" secondItem="iaE-mh-Nlc" secondAttribute="leading" id="UNt-De-7Dn"/>
+                            <constraint firstItem="dLd-zD-H36" firstAttribute="top" secondItem="ghk-Hh-raZ" secondAttribute="bottom" constant="-152" id="fRB-Kh-72m"/>
+                            <constraint firstAttribute="trailing" secondItem="ghk-Hh-raZ" secondAttribute="trailing" id="n2w-BK-sfO"/>
+                            <constraint firstItem="yaI-8A-YEE" firstAttribute="top" secondItem="dLd-zD-H36" secondAttribute="bottom" constant="68" id="tAJ-LQ-oWb"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="fRB-Kh-72m"/>
+                                <exclude reference="n2w-BK-sfO"/>
+                            </mask>
+                        </variation>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="userNameLabel" destination="ghk-Hh-raZ" id="xWA-mz-Qsp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="odI-vx-4qr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

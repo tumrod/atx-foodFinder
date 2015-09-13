@@ -10,4 +10,16 @@ import UIKit
 
 class GiftViewController: UIViewController {
 
+    @IBOutlet weak var userNameLabel: UILabel!
+    var user: Dictionary<String, AnyObject>?
+    
+    override func viewDidLoad() {
+        var name = ""
+        if let userDict = user {
+            name = userDict["name"] as! String
+        }
+        
+        userNameLabel.text = " \(name)'s List"
+    }
+    
 }
