@@ -10,6 +10,7 @@
 import UIKit
 
 class ViewController: UIViewController, FBSDKLoginButtonDelegate {
+    
     let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     
     override func viewDidLoad() {
@@ -20,9 +21,8 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
         if (FBSDKAccessToken.currentAccessToken() != nil)
         {
             // User is already logged in, do work such as go to next view controller.
-            var pagesViewController = appDelegate.pagesStoryBoard.instantiateViewControllerWithIdentifier("pages-home") as! UINavigationController
-            view.addSubview(pagesViewController.view)
-            presentViewController(pagesViewController, animated: true, completion: nil)
+            
+            showHomeViewController()
             
         }
         else
@@ -55,45 +55,20 @@ class ViewController: UIViewController, FBSDKLoginButtonDelegate {
             {
                 // Do work
             }
-            
         }
         
-        var pagesViewController = appDelegate.pagesStoryBoard.instantiateViewControllerWithIdentifier("pages-home") as! UINavigationController
-        view.addSubview(pagesViewController.view)
-        presentViewController(pagesViewController, animated: true, completion: nil)
+        showHomeViewController()
     }
     
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
         println("User Logged Out")
     }
-    
-    func returnUserData()
-    {
-        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: nil)
-        graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
-            
-            if ((error) != nil)
-            {
-                // Process error
-                println("Error: \(error)")
-            }
-            else
-            {
-                println("fetched user: \(result)")
-                let userName : NSString = result.valueForKey("name") as! NSString
-                println("User Name is: \(userName)")
-                let userEmail : NSString = result.valueForKey("email") as! NSString
-                println("User Email is: \(userEmail)")
-            }
-        })
-    }
-    
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+       
+    private func showHomeViewController() {
         
-        if segue.destinationViewController.isKindOfClass(ViewController) {
-            var viewController = segue.destinationViewController as! UIViewController
-            viewController.title = segue.identifier
-        }
+        var pagesViewController = appDelegate.pagesStoryBoard.instantiateViewControllerWithIdentifier("pages-home") as! UINavigationController
+        view.addSubview(pagesViewController.view)
+        presentViewController(pagesViewController, animated: true, completion: nil)
     }
 }
 

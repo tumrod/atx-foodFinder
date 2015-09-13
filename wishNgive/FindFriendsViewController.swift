@@ -8,6 +8,26 @@
 
 import UIKit
 
-class FindFriendsViewController: UIViewController {
+class FindFriendsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var friendsTableView: UITableView!
+    
+    override func viewDidLoad() {
+        
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell: UITableViewCell!
+        
+        return cell
+    }
+    
 }

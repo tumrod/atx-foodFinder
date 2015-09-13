@@ -10,8 +10,47 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
+    @IBOutlet weak var usernameLabel: UILabel!
+    
+    var name: String? {
+        didSet {
+            usernameLabel.text = "Hello,  " + name!
+        }
+    }
+    
+    override func viewDidLoad() {
+        usernameLabel.text = "Hello"
+        
+        returnUserData()
+    }
+    
     @IBAction func testBtn(sender: AnyObject) {
         var uTest = UserDataManager()
         uTest.writeData()
     }
+    
+    
+    func returnUserData()
+    {
+        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me", parameters: nil)
+        graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
+            
+            if ((error) != nil)
+            {
+                // Process error
+                println("Error: \(error)")
+            }
+            else
+            {
+                println("fetched user: \(result)")
+                let userName : NSString = result.valueForKey("name") as! NSString
+                self.name = result.valueForKey("name") as? String
+                println("User Name is: \(userName)")
+                // No longer valid
+                //let userEmail : NSString = result.valueForKey("email") as! NSString
+                //println("User Email is: \(userEmail)")
+            }
+        })
+    }
+
 }

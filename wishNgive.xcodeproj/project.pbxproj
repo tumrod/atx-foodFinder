@@ -30,6 +30,8 @@
 		D327340C1BA4AE2800799D57 /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327340B1BA4AE2800799D57 /* GiftViewController.swift */; };
 		D327340E1BA4AE3700799D57 /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327340D1BA4AE3700799D57 /* FindFriendsViewController.swift */; };
 		D32734121BA4DAD300799D57 /* NewItemWishListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32734111BA4DAD300799D57 /* NewItemWishListCell.swift */; };
+		D32734151BA4FC3400799D57 /* OnceUponATime.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D32734141BA4FC3400799D57 /* OnceUponATime.ttf */; };
+		D32734171BA5095600799D57 /* Pink Ladies and Peanutbutter Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D32734161BA5095600799D57 /* Pink Ladies and Peanutbutter Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,8 @@
 		D327340B1BA4AE2800799D57 /* GiftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
 		D327340D1BA4AE3700799D57 /* FindFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsViewController.swift; sourceTree = "<group>"; };
 		D32734111BA4DAD300799D57 /* NewItemWishListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewItemWishListCell.swift; sourceTree = "<group>"; };
+		D32734141BA4FC3400799D57 /* OnceUponATime.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OnceUponATime.ttf; sourceTree = "<group>"; };
+		D32734161BA5095600799D57 /* Pink Ladies and Peanutbutter Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pink Ladies and Peanutbutter Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,8 @@
 		CF2A37501BA4836A00EC2455 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D32734161BA5095600799D57 /* Pink Ladies and Peanutbutter Regular.ttf */,
+				D32734141BA4FC3400799D57 /* OnceUponATime.ttf */,
 				CF2A37511BA4836A00EC2455 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -299,7 +305,9 @@
 			files = (
 				CF2A37581BA4836A00EC2455 /* Main.storyboard in Resources */,
 				CF2A375D1BA4836A00EC2455 /* LaunchScreen.xib in Resources */,
+				D32734151BA4FC3400799D57 /* OnceUponATime.ttf in Resources */,
 				CF2A375A1BA4836A00EC2455 /* Images.xcassets in Resources */,
+				D32734171BA5095600799D57 /* Pink Ladies and Peanutbutter Regular.ttf in Resources */,
 				B8EE66721BA49D6C00AB4760 /* Pages.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

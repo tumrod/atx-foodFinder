@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol NewitemWishListCellDelegate: class {
+    func addedNewItemToWishList(itemName: String)
+}
+
 class NewItemWishListCell: UITableViewCell {
 
     @IBOutlet weak var newItemtextField: UITextField!
@@ -15,9 +19,13 @@ class NewItemWishListCell: UITableViewCell {
     @IBOutlet weak var createdCellView: UIView!
     @IBOutlet weak var itemNameLabel: UILabel!
     
+    weak var delegate: NewitemWishListCellDelegate?
+    
     @IBAction func addButtonTapped(sender: AnyObject) {
         newCellView.hidden = true
         itemNameLabel.text = newItemtextField.text
+        
+        delegate?.addedNewItemToWishList(newItemtextField.text)
     }
     
     @IBAction func deleteButtonTapped(sender: AnyObject) {
