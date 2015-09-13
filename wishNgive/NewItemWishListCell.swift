@@ -10,6 +10,7 @@ import UIKit
 
 protocol NewitemWishListCellDelegate: class {
     func addedNewItemToWishList(itemName: String)
+    func updatedTableCell()
 }
 
 class NewItemWishListCell: UITableViewCell {
@@ -26,10 +27,13 @@ class NewItemWishListCell: UITableViewCell {
         itemNameLabel.text = newItemtextField.text
         
         delegate?.addedNewItemToWishList(newItemtextField.text)
+        delegate?.updatedTableCell()
     }
     
     @IBAction func deleteButtonTapped(sender: AnyObject) {
         newCellView.hidden = false
         newItemtextField.text = ""
+        delegate?.updatedTableCell()
+
     }
 }

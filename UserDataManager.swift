@@ -48,6 +48,7 @@ class UserDataManager {
             (user) -> Void in
             completion!(main: user)
         })
+        
     }
     
     func fetchUserData(completion: (Users -> Void)? )

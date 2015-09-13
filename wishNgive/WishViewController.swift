@@ -13,11 +13,13 @@ class WishViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBOutlet weak var wishListTableView: UITableView!
     
     var tableData = ["Toys", "Dogs", "iPad", "Car", "Apple Pencil"]
+    var userDataMan = UserDataManager.userManagerSharedInstance
+    private var userObject: Users?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         wishListTableView.delegate = self
-        
+        addItemToUser()
     }
     
     @IBAction func toggleEditing(sender: AnyObject) {
@@ -26,6 +28,19 @@ class WishViewController: UIViewController, UITableViewDelegate, UITableViewData
         var editModeItem = sender as! UIBarButtonItem
         editModeItem.title = wishListTableView.editing ? "Done" : "Edit"
     }
+    
+    func addItemToUser() {
+        userDataMan.mainUser?.wishList.removeAll(keepCapacity: false)
+
+        for i in self.tableData {
+            var myItem = Item(itemName: i)
+            userDataMan.mainUser?.addItem(myItem!)
+            println(myItem)
+        }
+        userDataMan.writeData()
+        
+    }
+    
     
     // MARK: UITableViewDataSource
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -95,6 +110,10 @@ class WishViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableData.append(itemName)
         
         wishListTableView.reloadData()
+    }
+    
+    func updatedTableCell() {
+        addItemToUser()
     }
 
 }
