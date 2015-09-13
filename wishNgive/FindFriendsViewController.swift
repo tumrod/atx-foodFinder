@@ -11,7 +11,8 @@ import UIKit
 class FindFriendsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
     @IBOutlet weak var friendsTableView: UITableView!
-    
+    var userDataMan = UserDataManager.userManagerSharedInstance
+
     private var friendsTableData: [String]? {
         didSet {
             selectedFriendsTableData = friendsTableData
@@ -29,7 +30,20 @@ class FindFriendsViewController: UIViewController, UITableViewDelegate, UITableV
     override func viewDidLoad() {
         
         SearchBar.delegate = self
-        //returnUserFriends()
+        
+        userDataMan.fetchUserFriends({
+            (friends) -> Void in
+            
+                self.friendsTableData = [String]()
+          
+                self.friendObjectList = friends
+                
+                for var index = 0; index < friends.count; index++ {
+                    var friendObject = friends[index] as Dictionary<String, AnyObject>
+                    self.friendsTableData?.append(friendObject["name"] as! String)
+                }
+        })
+
     }
     
     @IBOutlet weak var SearchBar: UISearchBar!
@@ -44,8 +58,6 @@ class FindFriendsViewController: UIViewController, UITableViewDelegate, UITableV
             })
         }
     }
-    
-    
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
@@ -71,45 +83,6 @@ class FindFriendsViewController: UIViewController, UITableViewDelegate, UITableV
         cell = friendListCell
         return cell
     }
-    
-    /*func returnUserFriends()
-    {
-    
-        let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "10204523977649021/friends", parameters: nil)
-        graphRequest.startWithCompletionHandler({ (connection, result, error) -> Void in
-            
-            if ((error) != nil)
-            {
-                // Process error
-                println("Error: \(error)")
-            }
-            else
-            {
-                println("fetched friends: \(result)")
-                self.friendsTableData = [String]()
-                
-                var responseDict = result as! Dictionary<String, AnyObject>
-                
-                println("response: \(responseDict)")
-                
-                var friendList = responseDict["data"] as? Array<Dictionary<String, AnyObject>>
-                
-                if let friends = friendList {
-                    self.friendObjectList = friends
-                    
-                    for var index = 0; index < friends.count; index++ {
-                        var friendObject = friends[index] as Dictionary<String, AnyObject>
-                        var fbID = friendObject["id"]!
-                        println("fbID: \(fbID)")
-                        self.friendsTableData?.append(friendObject["name"] as! String)
-                    }
-
-                }
-                
-
-            }
-        })
-    }*/
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.destinationViewController.isKindOfClass(GiftViewController) {

@@ -87,7 +87,7 @@ class UserDataManager {
         })
     }
     
-    func fetchUserFriends(completion: (Void -> Void)?)
+    func fetchUserFriends(completion: (Array<Dictionary<String, AnyObject>> -> Void)?)
     {
         
         let graphRequest : FBSDKGraphRequest = FBSDKGraphRequest(graphPath: "me/friends", parameters: nil)
@@ -126,7 +126,7 @@ class UserDataManager {
                     }
                     self.mainUser?.description()
                     
-                    completion!()
+                    completion!(friends)
                 }
                 
             }
