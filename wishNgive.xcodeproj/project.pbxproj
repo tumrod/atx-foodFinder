@@ -33,6 +33,7 @@
 		D32734151BA4FC3400799D57 /* OnceUponATime.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D32734141BA4FC3400799D57 /* OnceUponATime.ttf */; };
 		D32734171BA5095600799D57 /* Pink Ladies and Peanutbutter Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D32734161BA5095600799D57 /* Pink Ladies and Peanutbutter Regular.ttf */; };
 		D32734191BA5BA9A00799D57 /* FindFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D32734181BA5BA9A00799D57 /* FindFriendsCell.swift */; };
+		D327341B1BA5CAD700799D57 /* GiveViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D327341A1BA5CAD700799D57 /* GiveViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		D32734141BA4FC3400799D57 /* OnceUponATime.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = OnceUponATime.ttf; sourceTree = "<group>"; };
 		D32734161BA5095600799D57 /* Pink Ladies and Peanutbutter Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pink Ladies and Peanutbutter Regular.ttf"; sourceTree = "<group>"; };
 		D32734181BA5BA9A00799D57 /* FindFriendsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FindFriendsCell.swift; sourceTree = "<group>"; };
+		D327341A1BA5CAD700799D57 /* GiveViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiveViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 			children = (
 				D32734111BA4DAD300799D57 /* NewItemWishListCell.swift */,
 				D32734181BA5BA9A00799D57 /* FindFriendsCell.swift */,
+				D327341A1BA5CAD700799D57 /* GiveViewCell.swift */,
 			);
 			name = PagesViewControllerCells;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				CF2A37531BA4836A00EC2455 /* AppDelegate.swift in Sources */,
 				D327340C1BA4AE2800799D57 /* GiftViewController.swift in Sources */,
 				D32734071BA4ADEE00799D57 /* HomeViewController.swift in Sources */,
+				D327341B1BA5CAD700799D57 /* GiveViewCell.swift in Sources */,
 				D327340E1BA4AE3700799D57 /* FindFriendsViewController.swift in Sources */,
 				B8C431611BA4D16E001F079C /* Table.swift in Sources */,
 				B8C431691BA4DCD4001F079C /* Model.xcdatamodeld in Sources */,

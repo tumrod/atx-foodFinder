@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GiftViewController: UIViewController {
+class GiftViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var userNameLabel: UILabel!
     var user: Dictionary<String, AnyObject>?
@@ -21,5 +21,24 @@ class GiftViewController: UIViewController {
         
         userNameLabel.text = " \(name)'s List"
     }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+        
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell: UITableViewCell!
+        
+        var giveListCell = tableView.dequeueReusableCellWithIdentifier("GiveTableViewCell") as! GiveViewCell
+        giveListCell.itemNameLabel.text = "Toy"
+        
+        cell = giveListCell
+        return cell
+    }
+
     
 }

@@ -42,14 +42,15 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.54250616776315785" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, Username " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdW-C9-CPC" userLabel="usernameLabel">
-                                <rect key="frame" x="0.0" y="84" width="375" height="46"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="71"/>
+                                <color key="backgroundColor" red="0.59242195509999995" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="Yug-CC-WQj"/>
                                     <constraint firstAttribute="width" constant="375" id="f2a-lS-La8"/>
-                                    <constraint firstAttribute="height" constant="46" id="u9S-2B-zCa"/>
+                                    <constraint firstAttribute="height" constant="71" id="u9S-2B-zCa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Pink_Ladies_and_Peanutbutte" family="Pink Ladies and Peanutbutte" pointSize="37"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -71,7 +72,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="mdW-C9-CPC" firstAttribute="top" secondItem="WoP-kD-p6L" secondAttribute="bottom" constant="20" id="O4n-Wq-XXB"/>
+                            <constraint firstItem="mdW-C9-CPC" firstAttribute="top" secondItem="WoP-kD-p6L" secondAttribute="bottom" id="O4n-Wq-XXB"/>
                             <constraint firstItem="mdW-C9-CPC" firstAttribute="leading" secondItem="4Vc-E7-vVS" secondAttribute="leading" id="Vwc-jA-BdW"/>
                         </constraints>
                     </view>
@@ -110,7 +111,7 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0r4-nu-3cN" userLabel="CreatedCellView">
                                                     <rect key="frame" x="0.0" y="0.5" width="375" height="47.5"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJi-Y1-Zgb">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jJi-Y1-Zgb">
                                                             <rect key="frame" x="8" y="0.0" width="320" height="47.5"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" constant="320" id="aGV-tI-TMV"/>
@@ -334,7 +335,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghk-Hh-raZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label's List" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ghk-Hh-raZ">
                                 <rect key="frame" x="0.0" y="64" width="375" height="69"/>
                                 <color key="backgroundColor" red="0.59242195509999995" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -345,21 +346,46 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="yaI-8A-YEE">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="yaI-8A-YEE">
                                 <rect key="frame" x="0.0" y="132" width="375" height="535"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="4S3-2O-WMu"/>
                                 </constraints>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Teg-8e-uUJ">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GiveTableViewCell" id="Teg-8e-uUJ" customClass="GiveViewCell" customModule="wishNgive" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Teg-8e-uUJ" id="YvH-6L-NHj">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Item Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xIg-2E-AFC">
+                                                    <rect key="frame" x="8" y="0.0" width="336" height="43.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XS-GV-A7r" userLabel="MarkedItemButton">
+                                                    <rect key="frame" x="347" y="12" width="20" height="20"/>
+                                                    <state key="normal" image="Unchecked_box">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="selected" image="checked_box"/>
+                                                    <connections>
+                                                        <action selector="toggleItemSelection:" destination="Teg-8e-uUJ" eventType="touchUpInside" id="rHR-dW-XFS"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="itemNameLabel" destination="xIg-2E-AFC" id="7Zy-J0-yiv"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="dvi-Zs-UwL" id="l99-2m-BT5"/>
+                                    <outlet property="delegate" destination="dvi-Zs-UwL" id="UgR-Ia-Ge4"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -391,6 +417,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Unchecked_box" width="256" height="256"/>
+        <image name="checked_box" width="256" height="256"/>
         <image name="plus_icon" width="256" height="256"/>
     </resources>
 </document>
